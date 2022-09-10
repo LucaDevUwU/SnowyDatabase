@@ -1,0 +1,5 @@
+name: SnowyDatabase
+version: '${version}'
+main: com.snowy.snowydatabase.SnowyDatabase
+api-version: 1.19
+authors: [ Snowyy ]
