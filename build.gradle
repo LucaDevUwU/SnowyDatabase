@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.snowy'
-version = '0.0.1'
+version = '0.0.2'
 
 repositories {
     mavenCentral()
@@ -15,9 +15,15 @@ repositories {
         name = 'sonatype'
         url = 'https://oss.sonatype.org/content/groups/public/'
     }
+    maven {
+        name = 'hikaricp'
+        url = 'https://mvnrepository.com/artifact/com.zaxxer/HikariCP'
+    }
 }
 
 dependencies {
+    implementation 'com.zaxxer:HikariCP:2.3.2'
+
     compileOnly 'io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT'
 }
 
